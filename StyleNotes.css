@@ -1,3 +1,10 @@
+.jumbotron
+{
+    background-color: black;
+    color: antiquewhite;
+    outline-color: blanchedalmond;
+}
+
 body
 {
     background-color: black;
