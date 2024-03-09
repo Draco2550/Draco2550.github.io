@@ -7,10 +7,8 @@
 
 body /*breaks bootstrap at the moment*/
 {
-    display: flex;
+     
     background-color: black;
-    color:rgb(200, 32, 200);
-    align-items: center;
     min-height: 100vh;
 
 }
@@ -18,7 +16,7 @@ body /*breaks bootstrap at the moment*/
 .box
 {
     
-    width: 450px;
+    width: 100%;/*orginal was 450px, was breaking boostrap for some reason*/
     height: 550px;
     border-radius: 30px;
     background: #2f363e;
@@ -40,18 +38,33 @@ h2
     text-align: center;
     color: white;
     font-size: 1.75em;
-    margin-bottom: 10px;
+    padding-top: 15px;
+    margin-bottom: 20px;
 }
 #inputBox
 {
     position: relative;
-    width: 100%;
+    width: 70%;
     border: none;
     outline: none;
     padding: 15px 20px;
     border-radius: 30px;
     font-size: 1em;
-    box-shadow: 5 px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(0,0,0,0.5),
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(0,0,0,0.5),
+    inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+#addButton
+{
+    position: relative;
+    display: inline;
+    width: 10%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 5px rgba(0,0,0,0.5),
     inset -3px -3px 5px rgba(0,0,0,0.5);
 }
 
@@ -72,6 +85,13 @@ h2
     rgba(0,0,0,0.5), inset -3px -3px 5px rgba(0,0,0,0.5);
 
 }
+
+.box li span
+{
+ z-index: 99;
+ margin-left: 10%;
+}
+
 .box li i 
 {
     position: absolute;
@@ -164,8 +184,3 @@ h2
     background: #fff;
 }
 
-.box li span
-{
- z-index: 99;
- margin-left: 10%;
-}

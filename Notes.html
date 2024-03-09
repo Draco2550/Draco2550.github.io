@@ -17,26 +17,25 @@
 <body>
 
     <div class="jumbotron text-center">
-        <h1>Welcome to Notes.com, where all your daily thoughts can be stored.</h1>
+        <h1>Welcome to Notes.com, where all your daily tasks can be stored.</h1>
     </div>
 <!--https://youtu.be/-pRg_daFjfk
 
 <button type="button" class="btn btn-block btn-primary" button id="textButton">Add an unordered text list</button>-->
 
-    <div class="d-flex justify-content-center"> 
-        <div class="position-relative">
-            <div class = "container">
-            <div class="box"> 
+     
+<div class = "container">
+    <div class = "box"> 
+        <div class = "d-flex justify-content-center">
             <h2>To Do List</h2>
-            <input type="text" class="form-control position-relative" placeholder="Write here..." id="inputBx">
-            <ul id="list"></ul>
-        </div>
-        </div>
+            <input type = "text" class = "form-control position-relative" placeholder = "Write here..." id = "inputBox">
+            <button class = "add-button" button type = "button" class = "btn btn-info" id = "addButton">Add</button>
+            <ul id = "list"></ul>
         </div>
     </div>
-    
+</div>
         
-    
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="JSforNotes.js"></script>
 </body>
 </html>
