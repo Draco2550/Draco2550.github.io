@@ -3,24 +3,40 @@
 <head>
     <title>Notes.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="StyleNotes.css" rel="stylesheet"/>
    
-    <div class = "jumbotron text-center">
-        <h1>Welcome to Notes.com, where all your daily thoughts can be stored.</h1>
-    </div>
-    <div contenteditable="true">
-        <h2>Note:</h2> <!--Make this spawn only after a button is pressed with the correct intension. 
+    
+   <!-- <div contenteditable="true">
+        <h2>Note:</h2> Make this spawn only after a button is pressed with the correct intension. 
         Frame a the editable text with a white underline.-->
     </div>
 </head>
 
 <body>
 
-    <div class = "container">
-        <button type="button" class="btn btn-block btn-primary" onclick="">Add a text list</button>
-        <button type="button" class="btn btn-block btn-default" onclick=""> Add a checklist</button>
+    <div class="jumbotron text-center">
+        <h1>Welcome to Notes.com, where all your daily thoughts can be stored.</h1>
+    </div>
+<!--https://youtu.be/-pRg_daFjfk
+
+<button type="button" class="btn btn-block btn-primary" button id="textButton">Add an unordered text list</button>-->
+
+    <div class="d-flex justify-content-center"> 
+        <div class="position-relative">
+            <div class = "container">
+            <div class="box"> 
+            <h2>To Do List</h2>
+            <input type="text" class="form-control position-relative" placeholder="Write here..." id="inputBx">
+            <ul id="list"></ul>
+        </div>
+        </div>
+        </div>
     </div>
     
+        
+    
+    <script src="JSforNotes.js"></script>
 </body>
 </html>
