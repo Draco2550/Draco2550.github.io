@@ -21,12 +21,18 @@ inputBx.addEventListener("keyup", function(event) {
 });
 
 function addItem(text) {
+    
     let listItem = document.createElement("li");
     listItem.textContent = text; // Use textContent for plain text
-    listItem.innerHTML = `${inputBx}<i></i>`
+    listItem.innerHTML = `<span>${text}</span><i></i>`
+    console.log(inputBx);
     listItem.addEventListener("click", function()
     {
         this.classList.toggle('done');
+    })
+
+    listItem.querySelector("i").addEventListener("click", function(){
+        listItem.remove();
     })
     
     list.appendChild(listItem);
