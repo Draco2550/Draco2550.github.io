@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="StyleNotes.css" rel="stylesheet"/>
-   
-    
-   <!-- <div contenteditable="true">
-        <h2>Note:</h2> Make this spawn only after a button is pressed with the correct intension. 
-        Frame a the editable text with a white underline.-->
     </div>
 </head>
 
@@ -19,9 +14,6 @@
     <div class="jumbotron text-center">
         <h1>Welcome to Notes.com, where all your daily tasks can be stored.</h1>
     </div>
-<!--https://youtu.be/-pRg_daFjfk
-
-<button type="button" class="btn btn-block btn-primary" button id="textButton">Add an unordered text list</button>-->
 
      
 <div class = "container">
@@ -29,11 +21,17 @@
         <div class = "d-flex justify-content-center">
             <h2>To Do List</h2>
             <input type = "text" class = "form-control position-relative" placeholder = "Write here..." id = "inputBox">
-            <button class = "add-button" button type = "button" class = "btn btn-info" id = "addButton">Add</button>
+            <input type = "date" id = "dueDate" name="Due Date">
+            <button class = "add-button" button type = "submit" class = "btn btn-info" id = "addButton">Add</button>
             <ul id = "list"></ul>
         </div>
     </div>
 </div>
+
+<div id="popup" class="popup">
+    <span id="popupMessage"></span>
+</div>
+
         
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="JSforNotes.js"></script>
