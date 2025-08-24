@@ -1,0 +1,77 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;     /* ensure breathing room on tiny screens */
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;   /* never get wider than this */
+}
+
+/* Responsive typography */
+#name {
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+  margin-bottom: 1.5rem;
+}
+
+/* Links list */
+.links {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.links li {
+  margin: 0.75rem 0;
+}
+
+.links a {
+  color: #0366d6;
+  text-decoration: none;
+  font-size: clamp(1rem, 4vw, 1.125rem);
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Tweak padding & spacing on small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.25rem;
+  }
+
+  #name {
+    margin-bottom: 1rem;
+  }
+
+  .links li {
+    margin: 0.5rem 0;
+  }
+}
