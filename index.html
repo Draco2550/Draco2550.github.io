@@ -7,17 +7,50 @@
   <link rel="stylesheet" href="StylePortfolio.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 id="name">Matthew Jednacz</h1>
-    <ul class="links">
-      <li><a href="https://github.com/Draco2550" target="_blank">GitHub Profile</a></li>
-      <li><a href="https://drive.google.com/file/d/1PawRd6M-zKrPfWWHYsritMbNgp-qB434/view?usp=sharing" target="_blank">My Resume (Google Drive)</a></li>
-      <li><a href="https://www.linkedin.com/in/matthew-jednacz-2930b52b4/" target="_blank">LinkedIn</a></li>
-    </ul>
-    <footer>
-      <p>&copy; <span id="year"></span> Matthew Jednacz</p>
-    </footer>
-  </div>
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="#about">About</a>
+      <div class="nav-right">
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-content">
+    <section class="hero">
+      <div class="photo-placeholder">
+        <!-- photo goes here -->
+      </div>
+      <h1>Matthew Jednacz</h1>
+      <p class="subtitle">Hands-on tech enthusiast & future CS grad</p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <p>Here’s a showcase of some of my favorite experiments—everything from Pi-hole setups to custom graphics engines. Stay tuned for live demos and deep-dives!</p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I’m in the final stretch of my BS in Computer Science, blending analytical rigor with creative tinkering. Whether it’s troubleshooting a Raspberry Pi network or scripting a comic-style explainer, I’m all about learning by doing.</p>
+    </section>
+
+    <section class="contact-toggle">
+      <div id="toggle-button" class="toggle-button">Click Me!</div>
+      <div id="links-block" class="links-block hidden">
+        <ul>
+          <li><a href="https://drive.google.com/your_resume_link" target="_blank">My Resume</a></li>
+          <li><a href="https://github.com/your-username" target="_blank">GitHub Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Matthew Jednacz</p>
+  </footer>
 
   <script src="Portfolio.js"></script>
 </body>

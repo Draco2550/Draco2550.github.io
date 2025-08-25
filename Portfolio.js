@@ -1,11 +1,14 @@
 // Portfolio.js
 
-// Set the current year in the footer
+// Set current year in footer
 document.addEventListener('DOMContentLoaded', () => {
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-  console.log('Portfolio loaded successfully');
+  // Toggle contact links
+  const btn = document.getElementById('toggle-button');
+  const links = document.getElementById('links-block');
+  btn.addEventListener('click', () => {
+    links.classList.toggle('hidden');
+    btn.textContent = links.classList.contains('hidden') ? 'Click Me!' : 'Hide Links';
+  });
 });
